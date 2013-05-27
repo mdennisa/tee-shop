@@ -1,0 +1,14 @@
+ErrorDocument 404 /tee-shop/error404.php
+
+Options -indexes
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /tee-shop/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^product/cart_add/(.*)/?$ cart_add.php?id=$1 [L]
+RewriteRule ^product/(.*)/?$ product_details.php?id=$1 [L]
+RewriteRule ^product/?$ product.php [L]
+RewriteRule ^cart/?$ cart.php [L]
