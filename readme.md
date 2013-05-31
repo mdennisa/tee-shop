@@ -9,6 +9,12 @@ Shopping cart example (for learning)
 3. Import or execute `db_tee-shop.sql` via your database admin ( `phpmyadmin` or `sqlbuddy` )
 4. Open `http://localhost/tee-shop`
 
+##Issues
+Q : Can not Log in ?  
+A : An old jquery version is required to display the log in form  
+Download jquery 1.4.2 [here](http://code.jquery.com/jquery-1.4.2.min.js)  
+Create folder in your localhost (htdocs or www) with dir_name `jquery` and put the jquery file inside, so it will be `http://localhost/jquery/jquery-1.4.2.min.js`
+
 ##Running app
 User access is restricted by authentication. Anonymous user can't view product detail without login
 
